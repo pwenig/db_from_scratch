@@ -1,0 +1,14 @@
+<html>
+<form action="/" method="post">
+  <input type="text" placeholder="Enter Task" name="task">
+  <input type="submit" value="Enter" >
+  </form>
+
+
+<ul>
+  <% name.each do |task| %>
+    <li><a href="/task/<%=task[:id]%>"><%= task[:name] %></a></li>
+  <% end %>
+</ul>
+
+</html>
